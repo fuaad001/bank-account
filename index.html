@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bank Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to Moringa Bank</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Register New Account:</h3>
+          <form class="registration form-group">
+            <label>Name</label>
+            <br>
+            <input type="text" class="name form-control">
+            <br>
+            <label>Initial Deposit</label>
+            <br>
+            <input type="number" class="initial-deposit form-control">
+            <button type="submit" class="submit-initial-deposit btn btn-info">Confirm</button>
+          </form>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Deposit or Withdraw Funds</h3>
+          <div id="new-deposit">
+            <div class="new-deposit">
+              <form class="deposit form-group">
+                <label>Deposit Amount</label>
+                <br>
+                <input type="text" class="deposit-amount form-control">
+                <button type="submit" class="submit-deposit btn btn-info">Confirm</button>
+                <button type="reset" class="btn btn-info">Make Another Deposit</button>
+              </form>
+            </div>
+          </div>
+
+          <div id="new-withdraw">
+            <div class="new-withdraw">
+              <form class="withdraw form-group">
+                <label>Withdraw Amount</label>
+                <br>
+                <input type="text" class="withdraw-amount form-control">
+                <button type="submit" class="submit-withdraw btn btn-info">Confirm</button>
+                <button type="reset" class="btn btn-info">Make Another Withdrawal</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <h3>Account Details</h3>
+          <label>Holder's Name:</label>
+          <span id="holder-name"></span>
+          <br>
+          <label>Current Balance:</label>
+          Ksh. <span id="balance"></span>
+
+          <hr>
+
+          <div class="deposits">
+            <h4>Account deposits:</h4>
+            <ul id="deposits"></ul>
+          </div>
+
+          <hr>
+
+          <div class="withdrawals">
+            <h4>Account Withdrawals</h4>
+            <ul id="withdrawals"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
